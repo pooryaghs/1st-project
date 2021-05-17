@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.panel {
+  @apply bg-center bg-auto rounded-xl m-5 cursor-pointer relative text-white flex-1 transform duration-500;
+}
+
+.panel h3 {
+  @apply text-lg font-bold absolute bottom-8 left-5 opacity-0;
+}
+
+.panel.active {
+  @apply flex-3 transform duration-500;
+}
+
+.panel.active h3 {
+  @apply opacity-100;
+}
